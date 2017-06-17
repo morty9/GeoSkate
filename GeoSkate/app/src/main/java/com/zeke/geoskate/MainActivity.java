@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_loading);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
         /*loadLayout = (RelativeLayout) RelativeLayout.inflate(this, R.layout.activity_loading, null);
         TextView loadTitle = (TextView) loadLayout.findViewById(R.id.textTitle);
         Typeface typeTxt = Typeface.createFromAsset(getAssets(), "font/AmaticSC-Regular.ttf");
         loadTitle.setTypeface(typeTxt);*/
+
+        setContentView(R.layout.activity_loading);
     }
 }
