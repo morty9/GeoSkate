@@ -8,19 +8,31 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
-    RelativeLayout loadLayout;
-
+    //private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
-
-        /*loadLayout = (RelativeLayout) RelativeLayout.inflate(this, R.layout.activity_loading, null);
-        TextView loadTitle = (TextView) loadLayout.findViewById(R.id.textTitle);
-        Typeface typeTxt = Typeface.createFromAsset(getAssets(), "font/AmaticSC-Regular.ttf");
-        loadTitle.setTypeface(typeTxt);*/
 
         setContentView(R.layout.activity_loading);
+        TextView title = (TextView) findViewById(R.id.textTitle);
+        TextView subtitle = (TextView) findViewById(R.id.textSubTitle);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/AmaticSC-Regular.ttf");
+
+        title.setTypeface(typeface);
+        subtitle.setTypeface(typeface);
+
+        //TO FIX
+        /*TranslateAnimation animation = new TranslateAnimation(0.0f, 0.50f, 0.0f, 0.0f);
+        animation.setDuration(700);
+        animation.setRepeatCount(3);
+        animation.setRepeatMode(2);
+        animation.setFillAfter(true);
+
+        ImageView spriteSkater = (ImageView) findViewById(R.id.spriteSkater);
+        spriteSkater.startAnimation(animation);*/
+
     }
+
+
 }
