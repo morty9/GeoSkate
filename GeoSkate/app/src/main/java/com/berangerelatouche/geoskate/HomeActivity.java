@@ -1,5 +1,7 @@
 package com.berangerelatouche.geoskate;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -24,8 +26,15 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#243744"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.container, Toolbar_Fragment.newInstance())
+                .commit();
     }
 
     @Override
