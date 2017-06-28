@@ -7,6 +7,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -80,7 +81,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         uiSettings.setCompassEnabled(true);
 
         LatLng mylocation = new LatLng(lat, lng);
-        mMap.addMarker(new MarkerOptions().position(mylocation).draggable(true).title("You are here"));
+        marker = mMap.addMarker(new MarkerOptions().position(mylocation).draggable(true).title("You are here"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 13));
 
         toolBarFunctions();
@@ -88,7 +89,12 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void toolBarFunctions() {
 
-        add.ad
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
 
     }
 
