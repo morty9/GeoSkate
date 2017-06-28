@@ -18,16 +18,16 @@
         android:background="@null"
         android:layout_alignParentLeft="true"/>
     
-    <Button
+    <ImageButton
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:src="@drawable/mapmarked"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:background="@drawable/mapmarked"
+        android:background="@null"
         android:layout_centerHorizontal="true"/>
 
     <ImageButton
