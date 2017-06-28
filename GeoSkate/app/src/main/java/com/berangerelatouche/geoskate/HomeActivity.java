@@ -84,13 +84,27 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         System.out.println("MARKER POSITION" + marker.getPosition());
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 13));
 
+        mMap.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener() {
+            @Override
+            public void onMarkerDragStart(Marker marker) {
+
+            }
+
+            @Override
+            public void onMarkerDrag(Marker marker) {
+
+            }
+
+            @Override
+            public void onMarkerDragEnd(Marker marker) {
+                mMap.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
+            }
+        });
+
     }
 
     public void toolBarFunctions(View view) {
 
-        //add.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
         System.out.println("TEST BUTTON");
         if (marker.getPosition() != null) {
             double latitude = marker.getPosition().latitude;
@@ -99,9 +113,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         } else {
             System.out.println("Error");
         }
-
-        //    }
-        //});
 
         System.out.println("ADDING LOCATION" + adding);
     }
