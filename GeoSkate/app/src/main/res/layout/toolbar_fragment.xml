@@ -17,7 +17,7 @@
         android:scaleType="fitCenter"
         android:background="@null"
         android:layout_alignParentLeft="true"/>
-    
+
     <ImageButton
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
