@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_loading);
         TextView title = (TextView) findViewById(R.id.textTitle);
         TextView subtitle = (TextView) findViewById(R.id.textSubTitle);

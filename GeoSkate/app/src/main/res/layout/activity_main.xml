@@ -7,13 +7,38 @@
     android:layout_height="match_parent"
     tools:context="com.berangerelatouche.geoskate.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/geoskatelogo"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="16dp" />
 
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="237dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="GeoSkate"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/buttonFind"
+        android:layout_width="182dp"
+        android:layout_height="82dp"
+        android:text="Trouver un skatepark"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <Button
+        android:id="@+id/buttonMark"
+        android:layout_width="182dp"
+        android:layout_height="82dp"
+        android:text="Marquer un skatepark"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="505dp" />
 </android.support.constraint.ConstraintLayout>
