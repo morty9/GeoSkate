@@ -36,6 +36,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     public ImageButton add;
     public ImageButton search;
     public ImageButton settings;
+    public LatLng adding;
     double lat, lng;
 
     @Override
@@ -63,7 +64,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .add(R.id.container, Toolbar_Fragment.newInstance())
                 .add(R.id.)
                 .commit();
-
     }
 
     @Override
@@ -81,21 +81,30 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         uiSettings.setCompassEnabled(true);
 
         LatLng mylocation = new LatLng(lat, lng);
-        marker = mMap.addMarker(new MarkerOptions().position(mylocation).draggable(true).title("You are here"));
+        this.marker = mMap.addMarker(new MarkerOptions().position(mylocation).draggable(true).title("You are here"));
+        System.out.println("MARKER POSITION" + marker.getPosition());
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 13));
 
-        toolBarFunctions();
     }
 
-    public void toolBarFunctions() {
+    public void toolBarFunctions(View view) {
 
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                
-            }
-        });
+        //add.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View view) {
+        System.out.println("TEST BUTTON");
+        if (marker.getPosition() != null) {
+            double latitude = marker.getPosition().latitude;
+            double longitude = marker.getPosition().longitude;
+            adding = new LatLng(latitude, longitude);
+        } else {
+            System.out.println("Error");
+        }
 
+        //    }
+        //});
+
+        System.out.println("ADDING LOCATION" + adding);
     }
 
 }

@@ -16,7 +16,8 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@null"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:onClick="toolBarFunctions"/>
     
     <ImageButton
         android:id="@+id/searchButton"
