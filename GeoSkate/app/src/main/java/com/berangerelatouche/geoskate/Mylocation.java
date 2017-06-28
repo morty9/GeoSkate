@@ -15,6 +15,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.view.SoundEffectConstants;
 
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+
 /**
  * Created by berangerelatouche on 27/06/2017.
  */
@@ -22,6 +25,8 @@ import android.view.SoundEffectConstants;
 public class Mylocation extends Service implements LocationListener {
 
     private Context context;
+
+    public HomeActivity homeData;
 
     boolean gLocationEnabled = false;
     boolean networkEnabled = false;

@@ -96,6 +96,23 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         System.out.println("MARKER POSITION" + marker.getPosition());
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 13));
 
+        mMap.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener() {
+            @Override
+            public void onMarkerDragStart(Marker marker) {
+
+            }
+
+            @Override
+            public void onMarkerDrag(Marker marker) {
+
+            }
+
+            @Override
+            public void onMarkerDragEnd(Marker marker) {
+                mMap.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
+            }
+        });
+
     }
 
     public void toolBarFunctions(View view) {
