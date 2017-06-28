@@ -60,6 +60,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.container, Toolbar_Fragment.newInstance())
+                .add(R.id.)
                 .commit();
 
     }
