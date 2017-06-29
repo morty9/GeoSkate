@@ -121,7 +121,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
      * search box to search Google places
      */
     public void findPlace(View view) {
-        /*try {
+        try {
             Intent intent =
                     new PlaceAutocomplete
                             .IntentBuilder(PlaceAutocomplete.MODE_FULLSCREEN)
@@ -131,7 +131,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             // TODO: Handle the error.
         } catch (GooglePlayServicesNotAvailableException e) {
             // TODO: Handle the error.
-        }*/
+        }
     }
 
     // A place has been received; use requestCode to track the request.

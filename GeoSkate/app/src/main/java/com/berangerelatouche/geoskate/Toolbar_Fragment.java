@@ -57,23 +57,4 @@ public class Toolbar_Fragment extends Fragment {
         return fragment;
     }
 
-    /*public void toolBarFunctions(View view) {
-
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("TEST BUTTON");
-                if (homeData.marker.getPosition() != null) {
-                    double latitude = homeData.marker.getPosition().latitude;
-                    double longitude = homeData.marker.getPosition().longitude;
-                    adding = new LatLng(latitude, longitude);
-                } else {
-                    System.out.println("Error");
-                }
-
-            }
-        });
-
-        System.out.println("ADDING LOCATION" + adding);
-    }*/
 }
