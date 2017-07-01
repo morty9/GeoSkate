@@ -12,12 +12,14 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_loading);
-        TextView title = (TextView) findViewById(R.id.textTitle);
+        setContentView(R.layout.activity_maps);
+
+
+        /*TextView title = (TextView) findViewById(R.id.textTitle);
         TextView subtitle = (TextView) findViewById(R.id.textSubTitle);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/AmaticSC-Regular.ttf");
 
         title.setTypeface(typeface);
-        subtitle.setTypeface(typeface);
+        subtitle.setTypeface(typeface);*/
     }
 }

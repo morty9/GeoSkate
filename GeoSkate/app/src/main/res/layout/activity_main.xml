@@ -11,34 +11,61 @@
         android:id="@+id/imageView"
         android:layout_width="80dp"
         android:layout_height="74dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@drawable/geoskatelogo"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="237dp"
-        android:layout_height="74dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="288dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="10dp"
         android:gravity="center"
         android:text="GeoSkate"
         android:textSize="30sp"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="31dp" />
 
     <Button
         android:id="@+id/buttonFind"
         android:layout_width="182dp"
         android:layout_height="82dp"
         android:text="Trouver un skatepark"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="506dp" />
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/mapView"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/buttonMark"
         android:layout_width="182dp"
         android:layout_height="82dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:text="Marquer un skatepark"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="505dp" />
+        app:layout_constraintLeft_toRightOf="@+id/buttonFind"
+        app:layout_constraintTop_toBottomOf="@+id/mapView"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="376dp"
+        android:layout_height="392dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
