@@ -17,7 +17,7 @@
         android:scaleType="fitCenter"
         android:background="@null"
         android:layout_alignParentLeft="true"
-        android:onClick="toolBarFunctions"/>
+        android:onClick="addCoordinate"/>
 
     <ImageButton
         android:id="@+id/searchButton"
@@ -44,7 +44,7 @@
         android:scaleType="fitCenter"
         android:src="@drawable/preference"
         android:layout_alignParentRight="true"
-        android:onClick=""/>
+        android:onClick="settingsTouched"/>
 
 
 </RelativeLayout>

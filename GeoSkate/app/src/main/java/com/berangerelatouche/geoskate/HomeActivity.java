@@ -172,4 +172,22 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+    public void addCoordinate(View view) {
+
+        System.out.println("TEST BUTTON");
+        if (marker.getPosition() != null) {
+            double latitude = marker.getPosition().latitude;
+            double longitude = marker.getPosition().longitude;
+            adding = new LatLng(latitude, longitude);
+        } else {
+            System.out.println("Error");
+        }
+
+        System.out.println("ADDING LOCATION" + adding);
+    }
+
+    public void settingsTouched(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
 }
