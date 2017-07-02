@@ -18,7 +18,7 @@
         android:background="@null"
         android:layout_alignParentLeft="true"
         android:onClick="addCoordinate"/>
-
+    
     <ImageButton
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"

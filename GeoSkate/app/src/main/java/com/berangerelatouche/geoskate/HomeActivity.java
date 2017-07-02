@@ -115,20 +115,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
-    public void toolBarFunctions(View view) {
-
-        System.out.println("TEST BUTTON");
-        if (marker.getPosition() != null) {
-            double latitude = marker.getPosition().latitude;
-            double longitude = marker.getPosition().longitude;
-            adding = new LatLng(latitude, longitude);
-        } else {
-            System.out.println("Error");
-        }
-
-        System.out.println("ADDING LOCATION" + adding);
-    }
-
     /*
      * In this method, Start PlaceAutocomplete activity
      * PlaceAutocomplete activity provides a -
