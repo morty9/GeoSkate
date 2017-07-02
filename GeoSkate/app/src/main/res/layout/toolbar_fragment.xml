@@ -6,6 +6,7 @@
     android:background="@color/red">
 
     <ImageButton
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:src="@drawable/plus"
@@ -15,9 +16,11 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@null"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true"
+        android:onClick="addCoordinate"/>
     
     <ImageButton
+        android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:src="@drawable/mapmarked"
@@ -26,10 +29,11 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@null"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="findPlace"/>
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/settingsButton"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginBottom="10dp"
@@ -39,7 +43,8 @@
         android:background="@null"
         android:scaleType="fitCenter"
         android:src="@drawable/preference"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:onClick="settingsTouched"/>
 
 
 </RelativeLayout>
