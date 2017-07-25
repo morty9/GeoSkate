@@ -46,5 +46,4 @@
         android:layout_alignParentRight="true"
         android:onClick="settingsTouched"/>
 
-
 </RelativeLayout>
