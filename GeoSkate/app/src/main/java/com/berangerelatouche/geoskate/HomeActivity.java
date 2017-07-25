@@ -109,7 +109,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         add = (ImageButton) findViewById(R.id.addButton);
         search = (ImageButton) findViewById(R.id.searchButton);
-        settings = (ImageButton) findViewById(R.id.settingsButton);
         mylocation = new Mylocation(getApplicationContext());
         location = mylocation.getLocation();
         lat = location.getLatitude();
