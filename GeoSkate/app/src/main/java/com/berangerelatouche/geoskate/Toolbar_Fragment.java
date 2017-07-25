@@ -49,9 +49,9 @@ public class Toolbar_Fragment extends Fragment {
     }
 
     public static Toolbar_Fragment newInstance() {
-        
+
         Bundle args = new Bundle();
-        
+
         Toolbar_Fragment fragment = new Toolbar_Fragment();
         fragment.setArguments(args);
         return fragment;
