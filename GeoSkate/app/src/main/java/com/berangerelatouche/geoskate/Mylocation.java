@@ -1,6 +1,5 @@
 package com.berangerelatouche.geoskate;
 
-import android.*;
 import android.Manifest;
 import android.app.Service;
 import android.content.Context;
@@ -13,10 +12,6 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
-import android.view.SoundEffectConstants;
-
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 
 /**
  * Created by berangerelatouche on 27/06/2017.
@@ -41,6 +36,7 @@ public class Mylocation extends Service implements LocationListener {
 
     public Location getLocation() {
         try {
+
             locationManager = (LocationManager) context.getSystemService(LOCATION_SERVICE);
             gLocationEnabled = locationManager.isProviderEnabled(locationManager.GPS_PROVIDER);
             networkEnabled = locationManager.isProviderEnabled(locationManager.NETWORK_PROVIDER);
