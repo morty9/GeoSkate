@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.berangerelatouche.geoskate.LoadingActivity">
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="395dp"
+        android:layout_height="223dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/cast_tracks_chooser_dialog_ok"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/geoskatelogo" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/geoskate"
+        android:textSize="36sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textSubTitle"
+        android:layout_width="395dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/geolocalisation_de_skateparks"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/spriteSkater"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        android:contentDescription="@string/animationskater"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSubTitle"
+        app:srcCompat="@drawable/skate1" />
+</android.support.constraint.ConstraintLayout>
