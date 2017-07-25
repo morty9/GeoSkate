@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">GeoSkate</string>
+    <string name="location_permission_denied">Les permissions sont nécessaires pour faire fonctionner l\'application</string>
+    <string name="permission_required_toast">Les permissions sont obligatoires</string>
+    <string name="permission_rationale_location">Veuillez accepter les permissions</string>
+    <string name="geoskate">GeoSkate</string>
+    <string name="geolocalisation_de_skateparks">Geolocalisation de Skateparks</string>
+    <string name="animationskater">animationSkater</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="back_arraow">back arraow</string>
+    <string name="ajouter_par_address">Ajouter par adresse</string>
+    <string name="utiliser_position_actuel">Utiliser position actuelle</string>
+    <string name="prendre_une_photo">Prendre une photo</string>
+    <string name="nom">Nom</string>
+    <string name="description">Description</string>
+    <string name="lorem">Mauris pretium varius sagittis. Maecenas lobortis eu justo in tincidunt. Proin scelerisque vitae arcu non aliquam. Nam cursus laoreet mauris in faucibus. Fusce sagittis massa est, varius fermentum nisi bibendum sed. Nulla facilisi. Donec finibus sit amet nisl vitae pellentesque. Maecenas aliquet quis ligula vel cursus.</string>
+    <string name="name_or_adress">Name or Adress</string>
+    <string name="spot_picture">spot picture</string>
+    <string name="back_arrow">back arrow</string>
+    <string name="ajouter_une_photo">Ajouter une photo</string>
+    <string name="photo_ajouter">Changer de photo</string>
 </resources>
