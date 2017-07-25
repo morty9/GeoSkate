@@ -11,9 +11,13 @@
         android:layout_width="395dp"
         android:layout_height="223dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/cast_tracks_chooser_dialog_ok"
         android:foregroundGravity="center_horizontal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/geoskatelogo" />
@@ -24,10 +28,13 @@
         android:layout_height="64dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="GeoSkate"
+        android:text="@string/geoskate"
         android:textSize="36sp"
         app:layout_constraintTop_toBottomOf="@+id/imageLogo"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textSubTitle"
@@ -35,17 +42,27 @@
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Geolocalisation de Skateparks"
+        android:text="@string/geolocalisation_de_skateparks"
         android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <ImageView
         android:id="@+id/spriteSkater"
         android:layout_width="64dp"
         android:layout_height="58dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        android:contentDescription="@string/animationskater"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSubTitle"
-        app:srcCompat="@drawable/skate1"
-        tools:layout_editor_absoluteX="173dp" />
+        app:srcCompat="@drawable/skate1" />
 </android.support.constraint.ConstraintLayout>

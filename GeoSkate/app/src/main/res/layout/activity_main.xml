@@ -5,6 +5,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <FrameLayout
+        android:id="@+id/fragment_contenair"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+    </FrameLayout>
+
     <RelativeLayout
         android:id="@+id/gplaces"
         android:layout_width="match_parent"
@@ -17,11 +24,13 @@
         android:layout_height="match_parent"
         class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_weight="1"/>
-    
+
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 
-</LinearLayout>
+
+</LinearLayout
+    >
